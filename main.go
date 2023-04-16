@@ -1,4 +1,4 @@
-package godamp
+package main
 
 import "github.com/krak7602/godamp/cli"
 
