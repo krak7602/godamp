@@ -8,7 +8,7 @@ import (
 	"log"
 )
 
-func Godamp(cmd *cobra.Command, args []string) {
+func Monitor(cmd *cobra.Command, args []string) {
 	device := args[0]
 	handle, err := pcap.OpenLive(device, 65535, true, pcap.BlockForever)
 	if err != nil {
