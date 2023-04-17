@@ -12,6 +12,7 @@ var godampCmd = &cobra.Command{
 }
 
 func Execute() {
+	monitorCmd.Flags().StringVarP(&filter, "filter", "f", "", "Add filter for packets")
 	godampCmd.AddCommand(listCmd)
 	godampCmd.AddCommand(monitorCmd)
 
